@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>4.11 Практическая работа</h1>
+    <!-- Первая задача -->
+    <script>
+        function average(a, b, c) {
+            return (a + b + c) / 3;
+        }
+        console.log(average(1, 2, 3));
+    </script>
+
+    <!-- Задача 2-->
+    <script>
+
+        function celsiusToFahrenheit(celsius) {
+            return celsius * 1.8 + 32;
+        }
+
+
+        function fahrenheitToCelsius(fahrenheit) {
+            return (fahrenheit - 32) / 1.8;
+        }
+
+        console.log(celsiusToFahrenheit(25));  // Вывод: 77
+        console.log(fahrenheitToCelsius(77));  // Вывод: 25
+
+    </script>
+
+    <!-- Задача 3 -->
+    <script>
+        // Стрелочная функция для перевода Цельсия в Фаренгейт
+        const convertCelsiusToFahrenheit = (tempCelsius) => tempCelsius * 1.8 + 32;
+
+        // Стрелочная функция для перевода Фаренгейта в Цельсий
+        const convertFahrenheitToCelsius = (tempFahrenheit) => (tempFahrenheit - 32) / 1.8;
+
+        // Пример вызовов
+        console.log(convertCelsiusToFahrenheit(25));  // Вывод: 77
+        console.log(convertFahrenheitToCelsius(77));  // Вывод: 25
+    </script>
+
+    <!-- 4) Задача -->
+    <script>
+        let count = 3;
+
+        // Функция для увеличения переменной count на 1
+        function countPlusOne() {
+            count += 1;
+            console.log(count);
+        }
+
+        // Пример вызовов функции
+        countPlusOne();  // Вывод: 4
+        countPlusOne();  // Вывод: 5
+
+    </script>
+
+    <!-- Задача 6 -->
+    <script>
+        function totalSum(price, amount, discount) {
+            return price * amount * (1 - discount / 100);
+        }
+
+        // Пример вызова функции
+        let priceItem = 25000;
+        let amountItem = 3;
+        let discountItem = 20;
+        console.log(totalSum(priceItem, amountItem, discountItem));  // Вывод: 60000
+
+    </script>
+</body>
+
+</html>
